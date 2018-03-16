@@ -1,2 +1,1 @@
-build-dep lilypond
-autoconf fonts-texgyre texlive-lang-cyrillic
+lilypond
