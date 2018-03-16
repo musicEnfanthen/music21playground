@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   </head>
+<body>
+<h3>Note</h3>
+<div class="class-inherit">inherits <a href="element.html">Element</a></div>
+<div class="class-description">
+Graphic representation of a note.
+</div>
+<h4>Properties</h4>
+<div class="properties">
+<table>
+<tr class="prop-odd"><td class="prop-name">accidental</td><td class="prop-type">Accidental</td><td class="prop-desc">       note accidental (null if none)</td></tr>
+<tr class="prop-even"><td class="prop-name">accidentalType</td><td class="prop-type">int</td><td class="prop-desc">              note accidental type</td></tr>
+<tr class="prop-odd"><td class="prop-name">dots</td><td class="prop-type">array[NoteDot]</td><td class="prop-desc">   list of note dots (some can be null, read only)</td></tr>
+<tr class="prop-even"><td class="prop-name">dotsCount</td><td class="prop-type">int</td><td class="prop-desc">              number of note dots (read only)</td></tr>
+<tr class="prop-odd"><td class="prop-name">elements</td><td class="prop-type">array[Element]</td><td class="prop-desc">   list of elements attached to notehead</td></tr>
+<tr class="prop-even"><td class="prop-name">fret</td><td class="prop-type">int</td><td class="prop-desc">              fret number in tablature</td></tr>
+<tr class="prop-odd"><td class="prop-name">ghost</td><td class="prop-type">bool</td><td class="prop-desc">             ghost note (guitar: death note)</td></tr>
+<tr class="prop-even"><td class="prop-name">headGroup</td><td class="prop-type">enum</td><td class="prop-desc"> (NoteHead.HEAD_NORMAL, .HEAD_BREVIS_ALT, .HEAD_CROSS, .HEAD_DIAMOND, .HEAD_DO, .HEAD_FA, .HEAD_LA, .HEAD_MI, .HEAD_RE, .HEAD_SLASH, .HEAD_SOL, .HEAD_TI, .HEAD_XCIRCLE, .HEAD_TRIANGLE)</td></tr>
+<tr class="prop-odd"><td class="prop-name">headType</td><td class="prop-type">enum</td><td class="prop-desc"> (NoteHead.HEAD_AUTO, .HEAD_BREVIS, .HEAD_HALF, .HEAD_QUARTER, .HEAD_WHOLE)</td></tr>
+<tr class="prop-even"><td class="prop-name">hidden</td><td class="prop-type">bool</td><td class="prop-desc">             hidden, not played note (read only)</td></tr>
+<tr class="prop-odd"><td class="prop-name">line</td><td class="prop-type">int</td><td class="prop-desc">              notehead position (read only)</td></tr>
+<tr class="prop-even"><td class="prop-name">mirror</td><td class="prop-type">bool</td><td class="prop-desc">             mirror notehead on x axis (read only)</td></tr>
+<tr class="prop-odd"><td class="prop-name">pitch</td><td class="prop-type">int</td><td class="prop-desc">              midi pitch</td></tr>
+<tr class="prop-even"><td class="prop-name">play</td><td class="prop-type">bool</td><td class="prop-desc">             play note</td></tr>
+<tr class="prop-odd"><td class="prop-name">ppitch</td><td class="prop-type">int</td><td class="prop-desc">              actual played midi pitch (honoring ottavas) (read only)</td></tr>
+<tr class="prop-even"><td class="prop-name">small</td><td class="prop-type">bool</td><td class="prop-desc">             small notehead</td></tr>
+<tr class="prop-odd"><td class="prop-name">string</td><td class="prop-type">int</td><td class="prop-desc">              string number in tablature</td></tr>
+<tr class="prop-even"><td class="prop-name">subchannel</td><td class="prop-type">int</td><td class="prop-desc">              midi subchannel (for midi articulation) (read only)</td></tr>
+<tr class="prop-odd"><td class="prop-name">tieBack</td><td class="prop-type">Tie</td><td class="prop-desc">              note backward tie (null if none, read only)</td></tr>
+<tr class="prop-even"><td class="prop-name">tieFor</td><td class="prop-type">Tie</td><td class="prop-desc">              note forward tie (null if none, read only)</td></tr>
+<tr class="prop-odd"><td class="prop-name">tpc</td><td class="prop-type">int</td><td class="prop-desc">              tonal pitch class, as per concert pitch setting</td></tr>
+<tr class="prop-even"><td class="prop-name">tpc1</td><td class="prop-type">int</td><td class="prop-desc">              tonal pitch class, non transposed</td></tr>
+<tr class="prop-odd"><td class="prop-name">tpc2</td><td class="prop-type">int</td><td class="prop-desc">              tonal pitch class, transposed</td></tr>
+<tr class="prop-even"><td class="prop-name">tuning</td><td class="prop-type">float</td><td class="prop-desc">            tuning offset in cent</td></tr>
+<tr class="prop-odd"><td class="prop-name">userDotPosition</td><td class="prop-type">enum</td><td class="prop-desc"> (Direction.AUTO, Direction.DOWN, Direction.UP)</td></tr>
+<tr class="prop-even"><td class="prop-name">userMirror</td><td class="prop-type">enum</td><td class="prop-desc"> (DirectionH.AUTO, DirectionH.LEFT, DirectionH.RIGHT)</td></tr>
+<tr class="prop-odd"><td class="prop-name">veloOffset</td><td class="prop-type">int</td><td class="prop-desc"></td></tr>
+<tr class="prop-even"><td class="prop-name">veloType</td><td class="prop-type">enum</td><td class="prop-desc"> (Note.OFFSET_VAL, Note.USER_VAL)</td></tr>
+</table></div>
+</body>
+</html>

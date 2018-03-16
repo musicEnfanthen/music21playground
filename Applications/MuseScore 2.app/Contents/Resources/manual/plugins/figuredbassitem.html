@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   </head>
+<body>
+<h3>FiguredBassItem</h3>
+<div class="class-inherit">inherits <a href="element.html">Element</a></div>
+<div class="class-description">
+One line of a figured bass indication
+</div>
+<h4>Properties</h4>
+<div class="properties">
+<table>
+<tr class="prop-odd"><td class="prop-name">continuationLine</td><td class="prop-type">enum</td><td class="prop-desc"> (FiguredBassItem.NONE, .SIMPLE, .EXTENDED)  whether item has continuation line or not, and of which type</td></tr>
+<tr class="prop-even"><td class="prop-name">digit</td><td class="prop-type">int</td><td class="prop-desc">                              main digit(s) (0 - 9)</td></tr>
+<tr class="prop-odd"><td class="prop-name">displayText</td><td class="prop-type">string</td><td class="prop-desc">                           text displayed (depends on configured fonts) (read only)</td></tr>
+<tr class="prop-even"><td class="prop-name">normalizedText</td><td class="prop-type">string</td><td class="prop-desc">                           conventional textual representation of item properties (= text used during input) (read ony)</td></tr>
+<tr class="prop-odd"><td class="prop-name">parenthesis1</td><td class="prop-type">enum</td><td class="prop-desc"> (FiguredBassItem.NONE, .ROUNDOPEN, .ROUNDCLOSED, .SQUAREDOPEN, .SQUAREDCLOSED)  parentesis before the prefix</td></tr>
+<tr class="prop-even"><td class="prop-name">parenthesis2</td><td class="prop-type">enum</td><td class="prop-desc"> (FiguredBassItem.NONE, .ROUNDOPEN, .ROUNDCLOSED, .SQUAREDOPEN, .SQUAREDCLOSED)  parentesis after the prefix / before the digit</td></tr>
+<tr class="prop-odd"><td class="prop-name">parenthesis3</td><td class="prop-type">enum</td><td class="prop-desc"> (FiguredBassItem.NONE, .ROUNDOPEN, .ROUNDCLOSED, .SQUAREDOPEN, .SQUAREDCLOSED)  parentesis after the digit / before the suffix</td></tr>
+<tr class="prop-even"><td class="prop-name">parenthesis4</td><td class="prop-type">enum</td><td class="prop-desc"> (FiguredBassItem.NONE, .ROUNDOPEN, .ROUNDCLOSED, .SQUAREDOPEN, .SQUAREDCLOSED)  parentesis after the suffix / before the cont. line</td></tr>
+<tr class="prop-odd"><td class="prop-name">parenthesis5</td><td class="prop-type">enum</td><td class="prop-desc"> (FiguredBassItem.NONE, .ROUNDOPEN, .ROUNDCLOSED, .SQUAREDOPEN, .SQUAREDCLOSED)  parentesis after the cont. line</td></tr>
+<tr class="prop-even"><td class="prop-name">prefix</td><td class="prop-type">enum</td><td class="prop-desc"> (FiguredBassItem.NONE, .DOUBLEFLAT, .FLAT, .NATURAL, .SHARP, .DOUBLESHARP, .PLUS, .BACKSLASH, .SLASH)  accidental before the digit</td></tr>
+<tr class="prop-odd"><td class="prop-name">suffix</td><td class="prop-type">enum</td><td class="prop-desc"> (FiguredBassItem.NONE, .DOUBLEFLAT, .FLAT, .NATURAL, .SHARP, .DOUBLESHARP, .PLUS, .BACKSLASH, .SLASH)  accidental/diacritic after the digit</td></tr>
+</table></div>
+</body>
+</html>

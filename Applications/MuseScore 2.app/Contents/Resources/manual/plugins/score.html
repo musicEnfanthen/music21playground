@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   </head>
+<body>
+<h3>Score</h3>
+<br/><h4>Methods</h4>
+<div class="methods">
+<div class="method">
+void <b>startCmd</b>()
+</div>
+<div class="method-description">
+to be used at least once by plugins of type "dialog" before score modifications to make them undoable<br/>
+</div>
+<div class="method">
+void <b>endCmd</b>(bool rollback = false)
+</div>
+<div class="method-description">
+to be used at least once by plugins of type "dialog" after score modifications to make them undoable<br/>
+</div>
+<div class="method">
+void <b>updateRepeatList</b>(bool expandRepeats)
+</div>
+<div class="method-description">
+??<br/>
+</div>
+<div class="method">
+Ms::Segment <b>firstSegment</b>(int segType = static_cast<int>(Segment::Type::All)
+</div>
+<div class="method-description">
+returns the first segment of the score of the given type (use Segment.Clef, ... enum)<br/>
+</div>
+<div class="method">
+void <b>doLayout</b>()
+</div>
+<div class="method-description">
+??<br/>
+</div>
+<div class="method">
+QString <b>metaTag</b>(const QString& tag)
+</div>
+<div class="method-description">
+returns as a string the metatag named 'tag'<br/>
+</div>
+<div class="method">
+void <b>setMetaTag</b>(const QString& tag, const QString& val)
+</div>
+<div class="method-description">
+sets the metatag named 'tag' to 'val'<br/>
+</div>
+<div class="method">
+void <b>appendPart</b>(const QString&)
+</div>
+<div class="method-description">
+appends to the score a named part as last part<br/>
+</div>
+<div class="method">
+void <b>appendMeasures</b>(int)
+</div>
+<div class="method-description">
+appends to the score a number of measures<br/>
+</div>
+<div class="method">
+void <b>addText</b>(const QString&, const QString&)
+</div>
+<div class="method-description">
+??<br/>
+</div>
+<div class="method">
+Ms::Cursor <b>newCursor</b>()
+</div>
+<div class="method-description">
+creates and returns a cursor to be used to navigate the score<br/>
+</div>
+<div class="method">
+QString <b>extractLyrics</b>()
+</div>
+<div class="method">
+void <b>cropPage</b>(qreal margins)
+</div>
+<div class="method-description">
+??<br/>
+</div>
+</div>
+<h4>Properties</h4>
+<div class="properties">
+<table>
+<tr class="prop-odd"><td class="prop-name">composer</td><td class="prop-type">string</td><td class="prop-desc">            composer of the score (read only)</td></tr>
+<tr class="prop-even"><td class="prop-name">duration</td><td class="prop-type">int</td><td class="prop-desc">               duration of score in seconds (read only)</td></tr>
+<tr class="prop-odd"><td class="prop-name">excerpts</td><td class="prop-type">array[Excerpt]</td><td class="prop-desc">    the list of the excerpts (linked parts)</td></tr>
+<tr class="prop-even"><td class="prop-name">firstMeasure</td><td class="prop-type">Measure</td><td class="prop-desc">           the first measure of the score (read only)</td></tr>
+<tr class="prop-odd"><td class="prop-name">firstMeasureMM</td><td class="prop-type">Measure</td><td class="prop-desc">           the first multi-measure rest measure of the score (read only)</td></tr>
+<tr class="prop-even"><td class="prop-name">harmonyCount</td><td class="prop-type">int</td><td class="prop-desc">               number of harmony items (read only)</td></tr>
+<tr class="prop-odd"><td class="prop-name">hasHarmonies</td><td class="prop-type">bool</td><td class="prop-desc">              score has chord symbols (read only)</td></tr>
+<tr class="prop-even"><td class="prop-name">hasLyrics</td><td class="prop-type">bool</td><td class="prop-desc">              score has lyrics (read only)</td></tr>
+<tr class="prop-odd"><td class="prop-name">keysig</td><td class="prop-type">int</td><td class="prop-desc">               key signature at the start of the score (read only)</td></tr>
+<tr class="prop-even"><td class="prop-name">lastMeasure</td><td class="prop-type">Measure</td><td class="prop-desc">           the last measure of the score (read only)</td></tr>
+<tr class="prop-odd"><td class="prop-name">lastMeasureMM</td><td class="prop-type">Measure</td><td class="prop-desc">           the last multi-measure rest measure of the score (read only)</td></tr>
+<tr class="prop-even"><td class="prop-name">lastSegment</td><td class="prop-type">Segment</td><td class="prop-desc">           the last score segment (read-only)</td></tr>
+<tr class="prop-odd"><td class="prop-name">lyricCount</td><td class="prop-type">int</td><td class="prop-desc">               number of lyric items (read only)</td></tr>
+<tr class="prop-even"><td class="prop-name">name</td><td class="prop-type">string</td><td class="prop-desc">            name of the score</td></tr>
+<tr class="prop-odd"><td class="prop-name">nmeasures</td><td class="prop-type">int</td><td class="prop-desc">               number of measures (read only)</td></tr>
+<tr class="prop-even"><td class="prop-name">npages</td><td class="prop-type">int</td><td class="prop-desc">               number of pages (read only)</td></tr>
+<tr class="prop-odd"><td class="prop-name">nstaves</td><td class="prop-type">int</td><td class="prop-desc">               number of staves (read only)</td></tr>
+<tr class="prop-even"><td class="prop-name">ntracks</td><td class="prop-type">int</td><td class="prop-desc">               number of tracks (staves * 4) (read only)</td></tr>
+<tr class="prop-odd"><td class="prop-name">parts</td><td class="prop-type">array[Part]</td><td class="prop-desc">       the list of parts (read only)</td></tr>
+<tr class="prop-even"><td class="prop-name">poet</td><td class="prop-type">string</td><td class="prop-desc">            poet of the score (read only)</td></tr>
+<tr class="prop-odd"><td class="prop-name">subtitle</td><td class="prop-type">string</td><td class="prop-desc">            subtitle of the score (read only)</td></tr>
+<tr class="prop-even"><td class="prop-name">title</td><td class="prop-type">string</td><td class="prop-desc">            title of the score (read only)</td></tr>
+</table></div>
+</body>
+</html>
