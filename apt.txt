@@ -1,3 +1,4 @@
+musescore
 lilypond
 gpicview
 okular
