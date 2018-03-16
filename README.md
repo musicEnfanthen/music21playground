@@ -10,3 +10,7 @@ https://mybinder.org/
 
 Google Notebooks:
 https://colab.research.google.com
+
+
+To see this Repo running on Binder, click on the badge: 
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/musicEnfanthen/music21playground/master)
