@@ -1,3 +1,12 @@
 # music21playground
 
 Some Jupyter notebooks (http://jupyter.org/) to test basic music21 functionalities.
+
+### Run notebook online
+There are some possibilities to get an interactive online notebook running without the need to install the whole jNotebook environment. Especially useful for classes, e-learning etc.
+
+Binder:
+https://mybinder.org/
+
+Google Notebooks:
+https://colab.research.google.com
