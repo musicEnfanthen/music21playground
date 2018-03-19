@@ -1,2 +1,3 @@
+# This file is required to install MuseScore and Lilypond inside the Binder container.
 musescore
 lilypond
