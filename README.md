@@ -14,4 +14,4 @@ https://colab.research.google.com
 To see this Repo running on Binder, click on the badge: 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/musicEnfanthen/music21playground/master)
 
-Basic functionalities are interactively working with the Binder image. Unfortunately, for now museScore can't be embedded in the Binder image in a way that the ".show()"-method from music21 is displaying any notes.
+Basic functionalities are interactively working with the Binder image. But, using jupyter notebook inside a Binder image causes some issues with music21's ".show()"-method (see: https://github.com/cuthbertLab/music21/issues/260). Thanks to Tony Hirst ([@psychemedia](https://github.com/psychemedia)) there is a small workaround with a redefinition of the method.
