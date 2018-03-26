@@ -37,6 +37,8 @@ jupyter notebook
 
 The server should now be running and the jupyter dashboard should open in your browser.
 
+To learn more about Jupyter notebooks, see this detailed tutorial: https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook#WhatIs
+
 
 ### Run notebook online
 There are some possibilities to get an interactive online notebook running without the need to install the whole jNotebook environment (especially useful for classes, e-learning etc):
