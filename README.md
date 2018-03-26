@@ -52,4 +52,6 @@ https://mybinder.org/
 To see this Repo running on Binder, click on the badge: 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/musicEnfanthen/music21playground/master)
 
-Basic functionalities are interactively working with the Binder image. But, using jupyter notebook inside a Binder image causes some issues with music21's ".show()"-method (see: https://github.com/cuthbertLab/music21/issues/260). Thanks to Tony Hirst ([@psychemedia](https://github.com/psychemedia)) there is a small workaround with a redefinition of the show()-method. Use the "Berg_Violin Concerto_interactiveImage.ipynb"-Notebook when you started this repo via Binder.
+Use the `xxx_interactiveImage.ipynb`-Notebooks when you started this repo via Binder because of the following:
+
+Basic functionalities are interactively working with the Binder image, but, using jupyter notebook inside a Binder image causes some issues with music21's ".show()"-method (see: https://github.com/cuthbertLab/music21/issues/260). Thanks to Tony Hirst ([@psychemedia](https://github.com/psychemedia)) there is a small workaround with a redefinition of the show()-method.
