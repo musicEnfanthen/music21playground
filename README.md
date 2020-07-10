@@ -1,3 +1,5 @@
+[![CC BY 4.0][cc-by-shield]][cc-by]
+
 # music21playground
 
 Some Jupyter notebooks (http://jupyter.org/) to test basic music21 functionalities.
@@ -55,3 +57,13 @@ To see this Repo running on Binder, click on the badge:
 Use the `xxx_interactiveImage.ipynb`-Notebooks when you started this repo via Binder because of the following:
 
 Basic functionalities are interactively working with the Binder image, but, using jupyter notebook inside a Binder image causes some issues with music21's ".show()"-method (see: https://github.com/cuthbertLab/music21/issues/260). Thanks to Tony Hirst ([@psychemedia](https://github.com/psychemedia)) there is a small workaround with a redefinition of the show()-method.
+
+### License
+The notebooks in this repo are licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
